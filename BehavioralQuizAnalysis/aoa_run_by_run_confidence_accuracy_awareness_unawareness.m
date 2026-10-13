@@ -15,7 +15,6 @@ allICAs = [];
 allDesignations = {};
 allSubjectERPs = [unique(text(1,:)); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:))))];
 allSubjectRuns = [unique(text(1,:)); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:)))); cell(1,length(unique(text(1,:))))];
-load([root '/aoa_pupil_data_subjects_kept.mat'])
 allRunsAllSubjects = [];
 allSessionRunsConfidence = [];
 allSessionRunsAccuracy = [];
