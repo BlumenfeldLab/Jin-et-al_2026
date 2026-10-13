@@ -3,7 +3,7 @@ clc
 %%
 location = 'l'
 if strcmp(location,'s')
-    [num text raw] = xlsread('/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/AoA_All_Subjs_Data_TTLs.xlsx');
+    [num text raw] = xlsread('/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
 elseif strcmp(location,'l')
     [num text raw] = xlsread('Y:\HNCT_AoA_Study\AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
 end
