@@ -78,7 +78,7 @@ for session = 1:length(text);
     allSessionRunsDays = [allSessionRunsDays; text(2,session)];
 end
 
-eval('allSessionRunAccuracyUnawarenessAwarenessConfidence.mat','allSessionRunsAwareness','allSessionRunsUnawareness','allSessionRunsConfidence','allSessionRunsAccuracy')
+save('allSessionRunAccuracyUnawarenessAwarenessConfidence.mat','allSessionRunsAwareness','allSessionRunsUnawareness','allSessionRunsConfidence','allSessionRunsAccuracy')
 %% Calculate all run averages and plot
 
 allRunsAllSubjectsNoLates = allRunsAllSubjects(allRunsAllSubjects(:,1) ~= 9999,:);
@@ -171,4 +171,3 @@ ylabel('Percentage Change')
 
 %% 
 
-save(allAc)
