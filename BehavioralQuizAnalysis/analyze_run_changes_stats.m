@@ -1,5 +1,4 @@
-load('Y:\HNCT_AoA_Study\AoA_Subjects\allSessionRunAccuracyAwarenessConfidence.mat')
-load('Y:\HNCT_AoA_Study\AoA_Subjects\allSessionRunAccuracyUnawarenessConfidence.mat')
+load('Y:\HNCT_AoA_Study\AoA_Subjects\allSessionRunAccuracyUnawarenessAwarenessConfidence.mat')
 
 % Example data with missing values
 timepoints = {'Run 1', 'Run 2', 'Run 3', 'Run 4', 'Run 5', 'Run 6'};
