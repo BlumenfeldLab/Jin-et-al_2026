@@ -77,6 +77,6 @@ for session = 1:length(text);
     allSessionRunsDays = [allSessionRunsDays; text(2,session)];
 end
 
-save('allSessionRunAccuracyUnawarenessAwarenessConfidence.mat','allSessionRunsAwareness','allSessionRunsUnawareness','allSessionRunsConfidence','allSessionRunsAccuracy','allSessionRunsDays')
+save('allSessionRunAccuracyUnawarenessAwarenessConfidence.mat','allSessionRunsAwareness','allSessionRunsUnawareness','allSessionRunsConfidence','allSessionRunsAccuracy','allSessionRunsDays','allSessionRunsSubject')
 
 
