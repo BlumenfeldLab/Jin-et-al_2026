@@ -78,6 +78,7 @@ for session = 1:length(text);
 end
 
 save('allSessionRunAccuracyUnawarenessAwarenessConfidence.mat','allSessionRunsAwareness','allSessionRunsUnawareness','allSessionRunsConfidence','allSessionRunsAccuracy')
+
 %% Calculate all run averages and plot
 
 allRunsAllSubjectsNoLates = allRunsAllSubjects(allRunsAllSubjects(:,1) ~= 9999,:);
