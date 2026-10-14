@@ -560,7 +560,7 @@ set(0,'DefaultFigureRenderer','Painters')
 for day = 1:length(accuracyDay2CommonSubset);
     categorical_vector_day2 = [categorical_vector_day2 categorical({'Day 1'})];
 end
-for female = 1:length(accuracyDay3CommonSubset)
+for day = 1:length(accuracyDay3CommonSubset)
     categorical_vector_day3 = [categorical_vector_day3 categorical({'Day 2'})];
 end
 
