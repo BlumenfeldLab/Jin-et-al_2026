@@ -199,10 +199,10 @@ list_of_findings = [unique(subject_sessions); cell(14,length(unique(subject_sess
 
 
 % Remove columns corresponding to missing participant data
-list_of_findings(:, any(strcmp(list_of_findings, '774VT'), 1)) = [];
-list_of_findings(:, any(strcmp(list_of_findings, '778MS'), 1)) = [];
-list_of_findings(:, any(strcmp(list_of_findings, '780PA'), 1)) = [];
-list_of_findings(:, any(strcmp(list_of_findings, '783AS'), 1)) = [];
+list_of_findings(:, any(strcmp(list_of_findings, '774'), 1)) = [];
+list_of_findings(:, any(strcmp(list_of_findings, '778'), 1)) = [];
+list_of_findings(:, any(strcmp(list_of_findings, '780'), 1)) = [];
+list_of_findings(:, any(strcmp(list_of_findings, '783'), 1)) = [];
 for session = 1:length(text);
     fileLocation = [root '/' text{1,session} '/' text{2,session} '/'];
     disp(['Loading ' text{1,session} ])
