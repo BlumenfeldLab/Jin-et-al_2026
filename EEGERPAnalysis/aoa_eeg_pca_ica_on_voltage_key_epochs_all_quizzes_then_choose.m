@@ -28,7 +28,6 @@ for session = 1:length(text);
         disp('Already done.')
         continue
     end
-    load([fileLocation sessionDate '_ICA_epochs_components_removed_key_epochs.mat'])
 
 
     %% Load EEG data
