@@ -4,15 +4,11 @@ clc
 location = 'l'
 if strcmp(location,'s')
     eeglabLocation = '/mnt/Data27/HNCT_AoA_Study/eeglab14_0_0b';
-    cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-    cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
     Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
     [num text raw] = xlsread('/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
     root = '/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/';
 elseif strcmp(location,'l')
     eeglabLocation = 'Y:\HNCT_AoA_Study\eeglab14_0_0b';
-    cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-    cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
     Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
     [num text raw] = xlsread('Y:\HNCT_AoA_Study\AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
     root = 'Y:\HNCT_AoA_Study\AoA_Subjects/';
