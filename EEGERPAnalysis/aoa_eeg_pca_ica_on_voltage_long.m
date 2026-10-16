@@ -3,8 +3,6 @@ function output_end = aoa_eeg_pca_ica_on_voltage_long(fileRoot,eeglabLocation,su
     fileLocation = [fileRoot '/' subjectPath '/' sessionDay '/'];
     cd(fileLocation)
     
-    cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-    cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
     Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
 
     load([fileLocation sessionDate '_good_long_epochs.mat'])
