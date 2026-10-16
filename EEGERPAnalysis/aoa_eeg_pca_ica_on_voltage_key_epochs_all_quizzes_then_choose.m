@@ -13,8 +13,7 @@ if strcmp(location,'l')
 end
 addpath(eeglabLocation);
 eeglab('nogui')
-cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
+
 Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
 
 [num text raw] = xlsread([root '/AoA_ERP_Quizzes_Then_Choose.xlsx']);
