@@ -31,7 +31,7 @@ for session = 1:length(text);
 
 
     %% Load EEG data
-    load([fileLocation sessionDate '_EEGlab_blank_key_epochs.mat'])
+    load(['aoa_EEGlab_blank.mat'])
     load([fileLocation sessionDate '_goodConfirmEpochs.mat'])
     %% Stuff an EEG lab struct with data and perform.
 
