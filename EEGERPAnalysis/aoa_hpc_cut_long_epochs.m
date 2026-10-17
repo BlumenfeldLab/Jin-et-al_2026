@@ -3,13 +3,9 @@ clc
 %% Instantiate variables 
 location = 'l'
 if strcmp(location,'s')
-    eeglabLocation = '/mnt/Data27/HNCT_AoA_Study/eeglab14_0_0b';
-    Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
     [num text raw] = xlsread('/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
     root = '/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/';
 elseif strcmp(location,'l')
-    eeglabLocation = 'Y:\HNCT_AoA_Study\eeglab14_0_0b';
-    Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
     [num text raw] = xlsread('Y:\HNCT_AoA_Study\AoA_Subjects/AoA_ERP_Quizzes_Then_Choose.xlsx');
     root = 'Y:\HNCT_AoA_Study\AoA_Subjects/';
 end
