@@ -4,8 +4,6 @@ clc
 location = 'l'
 if strcmp(location,'s')
     eeglabLocation = '/mnt/Data27/HNCT_AoA_Study/eeglab14_0_0b';
-    cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-    cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
     Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
 
 
@@ -13,8 +11,6 @@ if strcmp(location,'s')
     root = '/mnt/Data27/HNCT_AoA_Study/AoA_Subjects/';
 elseif strcmp(location,'l')
     eeglabLocation = 'Y:\HNCT_AoA_Study\eeglab14_0_0b';
-    cleanline_dir = [eeglabLocation '/plugins/tmullen-cleanline-696a7181b7d0'];
-    cleanraw_dir = [eeglabLocation '/plugins/clean_rawdata-master'];
     Photo_dir = [eeglabLocation '/sample_locs/GSN-HydroCel-257.sfp'];
 
 
