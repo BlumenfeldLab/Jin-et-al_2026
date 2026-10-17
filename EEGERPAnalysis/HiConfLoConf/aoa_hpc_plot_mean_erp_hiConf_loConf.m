@@ -32,7 +32,6 @@ for session = 1:length(allSubjectNames)
     
     disp(['Loading ' allSubjectNames{session} ', ' allSubjectDays{session}]);
     cd(allSubjectDirectories{session})
-    %load([sessionDates{session} '_power_vectors_quizzes_then_choose_250_window_31_sliding.mat'],'hiConfTotals','loConfTotals','mean_electrode_all_freq_zscore_hiConf','mean_electrode_all_freq_zscore_loConf')
     load([sessionDates{session} '_mean_erps_hiConf_loConf.mat'])
     for subject = 1:length(allSubjectERPs)
         if strcmp(allSubjectERPs{1,subject},allSubjectNames{session})
@@ -48,9 +47,7 @@ end
 allSubjectERPs_temp = allSubjectERPs;
 allSubjectERPs = [];
 for subject = 1:size(allSubjectERPs_temp,2)
-    %if sum(allSubjectERPs_temp{4,subject}) >= 12 && sum(allSubjectERPs_temp{5,subject}) >= 12
         allSubjectERPs = [allSubjectERPs allSubjectERPs_temp(:,subject)];
-    %end
 end
 
 %%
