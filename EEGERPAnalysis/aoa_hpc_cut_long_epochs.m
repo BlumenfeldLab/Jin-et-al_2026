@@ -21,7 +21,6 @@ for session = 1:length(text)
         cd(fileLocation)
         
         load([fileLocation sessionDate '_EEG_avgref.mat'])
-        load([fileLocation sessionDate '_goodConfirmTimes.mat'])
         if isfile([fileLocation sessionDate '_offsetGoodConfirmEpochs.mat'])
             load([fileLocation sessionDate '_offsetGoodConfirmEpochs.mat'])
         elseif ~isfile([fileLocation sessionDate '_goodConfirmEpochs.mat'])
